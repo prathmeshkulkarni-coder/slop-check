@@ -2,6 +2,14 @@
 
 > A CLI tool to detect low-effort, AI-generated contributions in open-source GitHub Pull Requests using Google Gemini.
 
+## ⚠️ Security Notice
+
+> **This tool sends PR diffs to the Google Gemini API for analysis.**
+> - ✅ Safe for **public, open-source repositories**
+> - ❌ **Do NOT use on private or proprietary repositories** — code will leave your infrastructure and be processed by Google's servers
+> - Your `GEMINI_API_KEY` is always stored locally in `.env` or in GitHub Secrets — it is never bundled into the published package
+> - Without a `GITHUB_TOKEN`, the GitHub API is rate-limited to **60 requests/hour per IP**. Add a token to avoid this
+
 ## Features
 
 - **Semantic Code Review**: Uses Google Gemini to actually _read_ and _understand_ the PR diff — not just count lines.
@@ -11,8 +19,19 @@
 
 ## Installation
 
+**Via NPM (recommended):**
 ```bash
-git clone https://github.com/YOUR_USERNAME/slop-check.git
+npm install -g @prathmesh2402/slop-check
+```
+
+**Or run directly without installing:**
+```bash
+npx @prathmesh2402/slop-check pr <github-pr-url>
+```
+
+**For contributors (clone & build from source):**
+```bash
+git clone https://github.com/prathmesh2402/slop-check.git
 cd slop-check
 npm install
 npm run build

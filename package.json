@@ -1,19 +1,38 @@
 {
-  "name": "slop-check",
+  "name": "@prathmesh2402/slop-check",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI tool to detect AI-generated slop and code issues in GitHub Pull Requests using Google Gemini.",
   "main": "dist/index.js",
   "bin": {
-    "slop-check": "./dist/index.js"
+    "slop-check": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "ai",
+    "slop",
+    "code-review",
+    "github",
+    "pull-request",
+    "gemini",
+    "cli",
+    "open-source",
+    "lint"
+  ],
+  "author": "Prathmesh",
+  "license": "MIT",
+  "homepage": "https://github.com/prathmesh2402/slop-check#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prathmesh2402/slop-check.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prathmesh2402/slop-check/issues"
+  },
   "type": "commonjs",
   "dependencies": {
     "@google/genai": "^1.51.0",
