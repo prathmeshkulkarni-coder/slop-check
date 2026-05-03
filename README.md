@@ -42,7 +42,7 @@ npm run build
 ### Local Analysis
 ```bash
 export GEMINI_API_KEY="your-gemini-api-key"
-node dist/index.js pr https://github.com/owner/repo/pull/123
+npx @prathmesh2402/slop-check pr https://github.com/owner/repo/pull/123
 ```
 
 ### Auto-Post Comment on GitHub PR
