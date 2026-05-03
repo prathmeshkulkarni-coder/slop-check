@@ -31,7 +31,7 @@ npx @prathmesh2402/slop-check pr <github-pr-url>
 
 **For contributors (clone & build from source):**
 ```bash
-git clone https://github.com/prathmesh2402/slop-check.git
+git clone https://github.com/prathmeshkulkarni-coder/slop-check.git
 cd slop-check
 npm install
 npm run build
