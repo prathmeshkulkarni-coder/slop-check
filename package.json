@@ -25,13 +25,13 @@
   ],
   "author": "Prathmesh",
   "license": "MIT",
-  "homepage": "https://github.com/prathmesh2402/slop-check#readme",
+  "homepage": "https://github.com/prathmeshkulkarni-coder/slop-check#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prathmesh2402/slop-check.git"
+    "url": "git+https://github.com/prathmeshkulkarni-coder/slop-check.git"
   },
   "bugs": {
-    "url": "https://github.com/prathmesh2402/slop-check/issues"
+    "url": "https://github.com/prathmeshkulkarni-coder/slop-check/issues"
   },
   "type": "commonjs",
   "dependencies": {
