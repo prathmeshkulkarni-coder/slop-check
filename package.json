@@ -1,6 +1,6 @@
 {
   "name": "@prathmesh2402/slop-check",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI tool to detect AI-generated slop and code issues in GitHub Pull Requests using Google Gemini.",
   "main": "dist/index.js",
   "bin": {
