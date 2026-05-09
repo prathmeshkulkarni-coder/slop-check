@@ -2,13 +2,13 @@ name: Publish to NPM
 
 on:
   release:
-    types: [published] # Triggers when you create a new release on GitHub
+    types: [published] 
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      id-token: write # Required for OIDC Trusted Publishing
+      id-token: write 
       contents: read
     steps:
       - name: Checkout repository
