@@ -1,0 +1,29 @@
+name: Publish to NPM
+
+on:
+  release:
+    types: [published] # Triggers when you create a new release on GitHub
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write # Required for OIDC Trusted Publishing
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Publish to NPM
+        run: npm publish --provenance --access public
