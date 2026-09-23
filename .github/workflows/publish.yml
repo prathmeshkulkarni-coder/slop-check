@@ -19,9 +19,6 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Upgrade NPM
-        run: npm install -g npm@latest
-
       - name: Install dependencies and build
         run: |
           npm install
